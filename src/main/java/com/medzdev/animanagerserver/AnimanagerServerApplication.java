@@ -1,4 +1,4 @@
-package com.medzdev.animanagerserver.controller;
+package com.medzdev.animanagerserver;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
