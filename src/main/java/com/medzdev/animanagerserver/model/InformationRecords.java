@@ -10,16 +10,19 @@ import lombok.NoArgsConstructor;
 import java.util.UUID;
 
 @Table(name = "information_records")
-@Entity
+@Entity(name = "information_records")
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
 @EqualsAndHashCode(of = "id")
 public class InformationRecords {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private UUID id;
+    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
     private String name;
     private String record_role;
 
+    public InformationRecords(RequestInformationRecordsDTO data){
+        this.name = data.name();
+        this.record_role = data.role();
+    }
 }
