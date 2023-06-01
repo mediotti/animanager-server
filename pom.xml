@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.medzdev</groupId>
-	<artifactId>animanager-serverside</artifactId>
+	<artifactId>animanager-server</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>animanager-serverside</name>
+	<name>animanager-server</name>
 	<description>Animanager serverside application</description>
 	<properties>
 		<java.version>17</java.version>

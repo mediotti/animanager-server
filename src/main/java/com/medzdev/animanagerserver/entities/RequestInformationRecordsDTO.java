@@ -1,4 +1,4 @@
-package com.medzdev.animanagerserver.model;
+package com.medzdev.animanagerserver.entities;
 
 public record RequestInformationRecordsDTO(String name, String role) {
 

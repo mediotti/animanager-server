@@ -1,6 +1,4 @@
-package com.medzdev.animanagerserver.model;
-
-import java.util.UUID;
+package com.medzdev.animanagerserver.entities;
 
 public record ResponseInformationRecordsDTO(Long id, String name, String role) {
     public ResponseInformationRecordsDTO(InformationRecords informationRecords){
