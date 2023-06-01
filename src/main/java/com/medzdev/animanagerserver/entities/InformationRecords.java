@@ -1,13 +1,10 @@
-package com.medzdev.animanagerserver.model;
+package com.medzdev.animanagerserver.entities;
 
-import com.medzdev.animanagerserver.Roles;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
-
-import java.util.UUID;
 
 @Table(name = "information_records")
 @Entity(name = "information_records")
