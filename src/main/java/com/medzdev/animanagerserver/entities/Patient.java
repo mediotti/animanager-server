@@ -30,8 +30,5 @@ public class Patient {
     private String medicalvaccinationrecord;
     private String medicalproceduresrecord;
 
-//    private String caregiverName;
-//    private String caregiverAddress;              //TODO: Implement caregiver information to persist in another table.
-//    private String caregiverSSN;
-//    private String caregiverPhoneNumber;
+     private InformationRecords caregiver;
 }
