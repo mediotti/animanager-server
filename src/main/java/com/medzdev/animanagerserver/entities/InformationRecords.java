@@ -6,6 +6,8 @@ import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.UUID;
 
 @Table(name = "information_records")
@@ -27,6 +29,9 @@ public class InformationRecords {
     private String ssn;
     private String zip_code;
     private String address_complements;
+
+    @OneToMany(mappedBy = "caregiver")
+    private List<Patient> animals = new ArrayList<>();
 
     public InformationRecords(RequestInformationRecordsDTO data){
         this.first_name = data.first_name();

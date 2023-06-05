@@ -30,5 +30,7 @@ public class Patient {
     private String medicalvaccinationrecord;
     private String medicalproceduresrecord;
 
-     private InformationRecords caregiver;
+    @ManyToOne
+    @JoinColumn(name = "caregiver_id")
+    private InformationRecords caregiver;
 }
