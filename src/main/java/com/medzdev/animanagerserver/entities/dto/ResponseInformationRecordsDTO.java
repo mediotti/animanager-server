@@ -1,4 +1,7 @@
-package com.medzdev.animanagerserver.entities;
+package com.medzdev.animanagerserver.entities.dto;
+
+import com.medzdev.animanagerserver.entities.InformationRecords;
+import com.medzdev.animanagerserver.entities.Role;
 
 import java.util.UUID;
 

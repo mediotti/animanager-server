@@ -1,12 +1,12 @@
 package com.medzdev.animanagerserver.service;
 
 import com.medzdev.animanagerserver.entities.InformationRecords;
-import com.medzdev.animanagerserver.entities.InformationRecordsRepository;
+import com.medzdev.animanagerserver.repositories.InformationRecordsRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.NoSuchElementException;
 import java.util.Optional;
 import java.util.UUID;
 
@@ -20,9 +20,9 @@ public class InformationRecordsService {
         return informationRecordsRepository.findAll();
     }
 
-    public InformationRecords findById(UUID id){
+    public InformationRecords findById(UUID id) throws NoSuchElementException {
         Optional<InformationRecords> result_obj = informationRecordsRepository.findById(id);
-        return result_obj.get();
+            return result_obj.get();
     }
 
     public InformationRecords insert(InformationRecords obj){
