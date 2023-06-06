@@ -1,7 +1,6 @@
 package com.medzdev.animanagerserver.resources;
 
 import com.medzdev.animanagerserver.entities.InformationRecords;
-import com.medzdev.animanagerserver.entities.InformationRecordsRepository;
 import com.medzdev.animanagerserver.service.InformationRecordsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
