@@ -1,11 +1,14 @@
 package com.medzdev.animanagerserver.entities;
 
+import com.medzdev.animanagerserver.entities.dto.RequestInformationRecordsDTO;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.UUID;
 
 @Table(name = "information_records")
@@ -28,6 +31,9 @@ public class InformationRecords {
     private String zip_code;
     private String address_complements;
 
+    @OneToMany(mappedBy = "caregiver")
+    private List<Patient> animals = new ArrayList<>();
+
     public InformationRecords(RequestInformationRecordsDTO data){
         this.first_name = data.first_name();
         this.last_name = data.last_name();
@@ -38,13 +44,4 @@ public class InformationRecords {
         this.address_complements = data.address_complements();
     }
 
-    public InformationRecords(String first_name, String last_name, String phone_number, String ssn, Role record_role, String zip_code, String address_complements) {
-        this.first_name = first_name;
-        this.last_name = last_name;
-        this.phone_number = phone_number;
-        this.ssn = ssn;
-        this.record_role = record_role;
-        this.zip_code = zip_code;
-        this.address_complements = address_complements;
-    }
 }
