@@ -1,5 +1,6 @@
 package com.medzdev.animanagerserver.entities;
 
+import com.medzdev.animanagerserver.entities.dto.RequestInformationRecordsDTO;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
@@ -43,13 +44,4 @@ public class InformationRecords {
         this.address_complements = data.address_complements();
     }
 
-    public InformationRecords(String first_name, String last_name, String phone_number, String ssn, Role record_role, String zip_code, String address_complements) {
-        this.first_name = first_name;
-        this.last_name = last_name;
-        this.phone_number = phone_number;
-        this.ssn = ssn;
-        this.record_role = record_role;
-        this.zip_code = zip_code;
-        this.address_complements = address_complements;
-    }
 }
