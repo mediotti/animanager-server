@@ -61,12 +61,12 @@ Run the image in a container
   POST /api/items/${id}
 ```
 
-| Parameter | Type     | Description                       |
+| Parameter | Type     | Description(All of them are **Required**                   |
 | :-------- | :------- | :-------------------------------- |
-| `record_role`| `String(Enum)` | **Required**. That attribute stores an enum, only accepting `EMPLOYEE` or `CAREGIVER` as a valid value. |
-| `first_name`| `String` | **Required**. That attribute should receive the person's first name  |
-| `last_name`| `String` | **Required**. That attribute should receive the person's surname  |
-| `phone_number`| `String` | **Required**. That attribute should receive the person's contact phone number  |
-| `ssn`| `String` | **Required**. That attribute should receive the person's social security number  (SSN), for brazilians, it should store the CPF number  |
-| `zip_code`| `String` | **Required**. That attribute should receive the person's home postal code  |
-| `address_complements`| `String` | **Required**. That attribute should receive the person's home additional information, such as house number, unit, building, etc.  |
+| `record_role`| `String(Enum)` | . That attribute stores an enum, only accepting `EMPLOYEE` or `CAREGIVER` as a valid value. |
+| `first_name`| `String` | That attribute should receive the person's first name  |
+| `last_name`| `String` | That attribute should receive the person's surname  |
+| `phone_number`| `String` | That attribute should receive the person's contact phone number  |
+| `ssn`| `String` | That attribute should receive the person's social security number  (SSN), for brazilians, it should store the CPF number  |
+| `zip_code`| `String` | That attribute should receive the person's home postal code  |
+| `address_complements`| `String` | That attribute should receive the person's home additional information, such as house number, unit, building, etc.  |
