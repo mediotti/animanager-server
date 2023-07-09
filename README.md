@@ -61,7 +61,7 @@ Run the image in a container
   POST /api/items/${id}
 ```
 
-| Parameter | Type     | Description(All of them are Required                   |
+| Parameter | Type     | Description(All of them are Required)                   |
 | :-------- | :------- | :-------------------------------- |
 | `record_role`| `String(Enum)` | That attribute stores an enum, only accepting `EMPLOYEE` or `CAREGIVER` as a valid value |
 | `first_name`| `String` | That attribute should receive the person's first name  |
