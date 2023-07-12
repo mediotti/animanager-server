@@ -66,7 +66,7 @@ Run the image in a container
 | `record_role`| `String(Enum)` | That attribute stores an enum, only accepting `EMPLOYEE` or `CAREGIVER` as a valid value |
 | `first_name`| `String` | That attribute should receive the person's first name  |
 | `last_name`| `String` | That attribute should receive the person's surname  |
-| `phone_number`| `String` | That attribute should receive the person's contact phone number  |
+| `phone_number`| `String` | That attribute should receive the person's contact phone number |
 | `ssn`| `String` | That attribute should receive the person's social security number  (SSN), for Brazilians, it should store the CPF number  |
 | `zip_code`| `String` | That attribute should receive the person's home postal code  |
 | `address_complements`| `String` | That attribute should receive the person's home additional information, such as house number, unit, building, etc.  |
