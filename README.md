@@ -44,7 +44,7 @@ Run the image in a container
   GET /animanager/information_records
 ```
 
-#### Get item 
+#### Get item
 
 ```http
   GET /api/items/${id}
